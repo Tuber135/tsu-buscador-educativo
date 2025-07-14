@@ -24,7 +24,7 @@ export class ConfigService {
   private configSubject = new BehaviorSubject<ApiConfig | null>(null);
   public config$ = this.configSubject.asObservable();
   
-  private currentEnvironment: keyof ApiConfig = 'local'; // Usando local por defecto para desarrollo
+  private currentEnvironment: keyof ApiConfig = 'ngrok'; // Usando ngrok por defecto para producción
 
   constructor(private http: HttpClient) {
     this.loadConfig();
