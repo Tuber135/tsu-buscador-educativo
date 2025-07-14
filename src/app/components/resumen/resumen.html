@@ -11,7 +11,6 @@
   <div class="flex flex-col lg:flex-row gap-8 px-6 py-8 max-w-7xl mx-auto">
     <!-- Sección principal del resumen -->
     <div class="lg:w-2/3">
-      <h2 class="text-3xl font-bold text-amber-900 mb-6 text-center">📚 Tiempo de Estudio</h2>
       <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
         <h3 class="text-xl font-semibold text-amber-800 mb-4">Resumen del Tema</h3>
         <div class="text-gray-700 leading-relaxed text-base mb-6 prose prose-amber max-w-none">
@@ -35,11 +34,19 @@
         <div class="mt-8 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
           <p class="text-amber-800 font-medium">💡 Usa este tiempo para estudiar y comprender el tema. Al finalizar el tiempo, podrás responder el cuestionario.</p>
         </div>
+        
+        <div class="mt-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+          <p class="text-red-800 font-medium">⚠️ <strong>IMPORTANTE:</strong> Una vez que entres al cuestionario, <strong>no podrás volver</strong> a esta sección de estudio. Asegúrate de haber estudiado bien el tema antes de continuar.</p>
+        </div>
       </div>
     </div>
 
     <!-- Panel del cronómetro -->
     <div class="lg:w-1/3">
+      <!-- Título principal de la sección -->
+      <h2 class="text-3xl font-bold text-amber-900 mb-6 text-center">📚 Tiempo de Estudio</h2>
+      
+      <!-- Cronómetro -->
       <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200 text-center sticky top-8">
         <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-amber-800">
           <svg class="w-10 h-10 fill-amber-800" viewBox="0 0 24 24">
@@ -47,7 +54,6 @@
           </svg>
         </div>
         
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Tiempo de Estudio</h3>
         <div class="text-4xl font-bold text-amber-800 mb-2">{{tiempoRestante}}</div>
         <p class="text-gray-600 mb-4">minutos restantes</p>
         
