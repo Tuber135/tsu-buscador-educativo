@@ -1,0 +1,14 @@
+{
+  "development": {
+    "apiUrl": "https://7b06b4ee5a11.ngrok-free.app"
+  },
+  "production": {
+    "apiUrl": "https://7b06b4ee5a11.ngrok-free.app"
+  },
+  "local": {
+    "apiUrl": "http://localhost:8000"
+  },
+  "ngrok": {
+    "apiUrl": "https://7b06b4ee5a11.ngrok-free.app"
+  }
+}
