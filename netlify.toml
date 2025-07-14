@@ -1,6 +1,6 @@
 [build]
   command = "ng build --configuration=production"
-  publish = "dist/tsu-app"
+  publish = "dist/tsu-app/browser"
 
 [[redirects]]
   from = "/*"
