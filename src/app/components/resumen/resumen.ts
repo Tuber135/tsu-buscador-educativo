@@ -1,10 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
   selector: 'app-resumen',
-  imports: [CommonModule],
+  imports: [CommonModule, MarkdownComponent],
   templateUrl: './resumen.html'
 })
 export class ResumenComponent implements OnInit, OnDestroy {

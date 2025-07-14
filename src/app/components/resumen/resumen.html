@@ -14,7 +14,9 @@
       <h2 class="text-3xl font-bold text-amber-900 mb-6 text-center">📚 Tiempo de Estudio</h2>
       <div class="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
         <h3 class="text-xl font-semibold text-amber-800 mb-4">Resumen del Tema</h3>
-        <p class="text-gray-700 leading-relaxed text-base mb-6">{{resumen}}</p>
+        <div class="text-gray-700 leading-relaxed text-base mb-6 prose prose-amber max-w-none">
+          <markdown [data]="resumen"></markdown>
+        </div>
         
         @if (causas && causas.length > 0) {
           <div class="mt-6">
