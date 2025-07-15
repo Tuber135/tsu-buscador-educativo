@@ -15,10 +15,10 @@ export class ResumenComponent implements OnInit, OnDestroy {
   causas: string[] = [];
   
   // Timer
-  tiempoRestante: string = '20:00';
+  tiempoRestante: string = '30:00';
   tiempoTerminado: boolean = false;
   private intervalId: any;
-  private tiempoEnSegundos: number = 1200; // 20 minutos
+  private tiempoEnSegundos: number = 1800; // 30 minutos
 
   constructor(private router: Router) {
     // Obtener datos del navigation state
@@ -105,7 +105,7 @@ export class ResumenComponent implements OnInit, OnDestroy {
 
   // Obtener el porcentaje de tiempo transcurrido para la barra de progreso
   get porcentajeTranscurrido(): number {
-    const tiempoTranscurrido = 1200 - this.tiempoEnSegundos;
-    return (tiempoTranscurrido / 1200) * 100;
+    const tiempoTranscurrido = 1800 - this.tiempoEnSegundos;
+    return (tiempoTranscurrido / 1800) * 100;
   }
 }
