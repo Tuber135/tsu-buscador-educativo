@@ -1,14 +1,14 @@
 {
   "development": {
-    "apiUrl": "https://1a5e51d23821.ngrok-free.app"
+    "apiUrl": "https://e1f68f37a6a5.ngrok-free.app"
   },
   "production": {
-    "apiUrl": "https://1a5e51d23821.ngrok-free.app"
+    "apiUrl": "https://e1f68f37a6a5.ngrok-free.app"
   },
   "local": {
     "apiUrl": "http://localhost:8000"
   },
   "ngrok": {
-    "apiUrl": "https://1a5e51d23821.ngrok-free.app"
+    "apiUrl": "https://e1f68f37a6a5.ngrok-free.app"
   }
 }
